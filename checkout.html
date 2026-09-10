@@ -13,7 +13,6 @@
        <div class="container">
       <img src="image/logo.png" class="rounded-circle me-2" alt="logo">
       <h1 class="h4 text-white mb-0 "> ONLINE <br>Shopping </h1>
-    
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav d-flex flex-row gap-4">
         <li class="nav-item"><a class="navlink" href="index.html">home</a></li>
@@ -24,27 +23,125 @@
         </div>
         </div>
     </nav>
-    <h2 class="text-dark text-center">CHECKOUT</h2>
-  <div class="container"  >
-    <div class="footer-menu">
-        
+<div class="container py-5">
+  <h2 class="fw-bold text-uppercase mb-4">CHECKOUT</h2>
+
+  <div class="row g-4">
+    <!-- LEFT COLUMN: CHECKOUT FORM -->
+    <div class="col-lg-8">
+      <div class="p-4 p-md-5 text-white" style="background-color: #6d5438; border-radius: 20px;">
+        <form>
+          <!-- Email Section -->
+          <div class="mb-4">
+            <label class="form-label text-light small fw-semibold">Email</label>
+            <input type="email" class="form-control rounded-pill border-0 py-2 px-3" placeholder="example@gmail.com">
+          </div>
+
+          <!-- Name Details -->
+          <label class="form-label text-light small fw-semibold">Details</label>
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control rounded-pill border-0 py-2 px-3" placeholder="First name">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control rounded-pill border-0 py-2 px-3" placeholder="second name">
+            </div>
+          </div>
+
+          <!-- Address Lines -->
+          <div class="mb-3">
+            <input type="text" class="form-control rounded-pill border-0 py-2 px-3 mb-3" placeholder="Address line 1">
+            <input type="text" class="form-control rounded-pill border-0 py-2 px-3 mb-3" placeholder="Address line 2">
+            <input type="text" class="form-control rounded-pill border-0 py-2 px-3" placeholder="Address line 3 (optional)">
+          </div>
+
+          <!-- Country, State, City -->
+          <div class="row g-3 mb-3">
+            <div class="col-md-4">
+              <input type="text" class="form-control rounded-pill border-0 py-2 px-3" placeholder="country">
+            </div>
+            <div class="col-md-4">
+              <input type="text" class="form-control rounded-pill border-0 py-2 px-3" placeholder="state">
+            </div>
+            <div class="col-md-4">
+              <input type="text" class="form-control rounded-pill border-0 py-2 px-3" placeholder="city">
+            </div>
+          </div>
+
+          <!-- Contact Number -->
+          <div class="mb-4">
+            <input type="tel" class="form-control rounded-pill border-0 py-2 px-3" placeholder="contact number">
+          </div>
+
+          <!-- Order Notes -->
+          <div>
+            <label class="form-label text-light small fw-semibold">order notes (optional)</label>
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" class="form-control rounded-pill border-0 py-2 px-3" placeholder="share your notes">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
+   <!-- RIGHT COLUMN: RECEIPT CARD -->
+<div class="col-lg-4 d-flex justify-content-center">
+  
+  <div class="position-relative w-100 d-flex flex-column align-items-center" style="margin-top: 20px;">
+    
+    <!-- 1. DUARA LA JUU (Oval Pill) -->
+    <div class="position-absolute translate-middle-x d-flex align-items-center 
+    justify-content-center shadow-sm" style="top: -35px; left: 50%; width: 95%; height: 160px;
+     background-color: #8E7507; border-radius: 50px; z-index: 2;">
+      
+      <img src="image/star 1.png" alt="Star Burst" style="max-width: 85%; 
+      max-height: 50px; object-fit: contain;">
+      
+    </div>
+
+    <!-- 3. RECTANGLE YA CHINI (Imeshushwa chini zaidi na urefu umeongezwa) -->
+    <div class="p-4 text-center d-flex flex-column justify-content-between" 
+         style="width: 78%; min-height: 520px; background-color: #e6dfd5; 
+         border: 1px solid #8E7507; border-top: none; border-radius: 0 0 20px 20px; 
+         padding-top: 130px !important; z-index: 1;">
+      
+      <!-- Taarifa za Risiti (Zimeshushwa chini) -->
+      <div>
+        <h3 class="fw-bold mb-1 text-dark">Order<br> Summary</h3>
+        <h5 class="fw-semibold text-dark mb-4">FashionStore</h5>
+
+        <p class="text-secondary small mb-5">Receipt #015</p>
+
+        <div class="row text-secondary small mb-2 fw-semibold">
+          <div class="col-4 text-start">Amount</div>
+          <div class="col-4 text-center">Date</div>
+          <div class="col-4 text-end">payment method</div>
+        </div>
+
+        <div class="row text-dark small fw-bold mb-4">
+          <div class="col-4 text-start">20,000tsh</div>
+          <div class="col-4 text-center">3-4-2026</div>
+          <div class="col-4 text-end">Bank</div>
+        </div>
+      </div>
+
+      <!-- Button ya Pay Now (Iko chini kabisa huko) -->
+      <div class="pt-4 mb-2">
+        <button class="btn text-white w-100 py-2 fw-semibold rounded-pill" 
+        style="background-color: #8E7507;">
+          Pay Now
+        </button>
+      </div>
+
+    </div>
+
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <footer class="footer-section py-3">
+</div>
+  </div>
+</div>
+<footer class="footer-section py-3">
     <div class="container">
         <div class="row g-2 small">
             <div class="col-12 col-md-3">
