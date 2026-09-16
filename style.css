@@ -1,0 +1,71 @@
+
+nav{
+    background-color: #6A5836;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+.brand img{
+    width: 50px;
+    height: 50px;
+}
+.brand h1{
+    font-size: 24px;
+    margin: 0;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+.active{
+    color: pink;
+}
+.hero-section{
+    background-image: url("image/banner.jpg");
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+    color: aliceblue;
+    min-height: 60vh;
+    backdrop-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(3px);                             
+}
+.btn-custom-brown {
+    background-color: #5c4b37; 
+    color: #ffffff;
+    border: none;
+}
+
+.btn-custom-brown:hover {
+    background-color: purple;
+    color: #ffffff;
+}
+
+.btn-custom-gold {
+    background-color: #a38241;
+    color: #ffffff;
+}
+.my-btn{
+    background-color: #6A5836;
+    color: white;
+}
+.footer-section{
+   background-color: black; 
+   color: white;
+    padding: 1.5rem !important;
+    font-size: 0.8rem;
+    margin-left: 1px;
+}
+.footer-links{
+    margin-bottom: 3px;
+    text-decoration: none;
+}
+/*product page*/
+.btn-sm{
+    background-color: #6A5836;
+}
+.card-img-top{
+    height: 200px;
+    object-fit: cover;
+}
