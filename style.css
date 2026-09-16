@@ -19,7 +19,7 @@ nav a{
     text-decoration: none;
 }
 .active{
-    color: orange;
+    color: pink;
 }
 .hero-section{
     background-image: url("image/banner.jpg");
@@ -64,6 +64,11 @@ nav a{
 /*product page*/
 .btn-sm{
     background-color: #6A5836;
+    transition: all 0.3s ease-in-out !important;
+}
+.btn-sm:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0,0,0.2);
 }
 .card-img-top{
     height: 200px;
