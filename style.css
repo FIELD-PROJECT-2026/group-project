@@ -31,6 +31,21 @@ nav a{
     backdrop-color: rgba(0,0,0,0.5);
     backdrop-filter: blur(3px);                             
 }
+.btn-custom-brown {
+    background-color: #5c4b37; 
+    color: #ffffff;
+    border: none;
+}
+
+.btn-custom-brown:hover {
+    background-color: purple;
+    color: #ffffff;
+}
+
+.btn-custom-gold {
+    background-color: #a38241;
+    color: #ffffff;
+}
 .my-btn{
     background-color: #6A5836;
     color: white;
