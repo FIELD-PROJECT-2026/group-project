@@ -19,7 +19,7 @@ nav a{
     text-decoration: none;
 }
 .active{
-    color: pink;
+    color: orange;
 }
 .hero-section{
     background-image: url("image/banner.jpg");
@@ -28,7 +28,7 @@ nav a{
     background-position: center;
     color: aliceblue;
     min-height: 60vh;
-    backdrop-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5);
     backdrop-filter: blur(3px);                             
 }
 .btn-custom-brown {
@@ -68,4 +68,10 @@ nav a{
 .card-img-top{
     height: 200px;
     object-fit: cover;
+}
+.product-card{
+     transition: transform 0.3s ease;
+}
+.product-card:hover{
+    transform: scale(1.2);
 }
