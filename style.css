@@ -19,7 +19,7 @@ nav a{
     text-decoration: none;
 }
 .active{
-    color: pink;
+    color: orange;
 }
 .hero-section{
     background-image: url("image/banner.jpg");
