@@ -17,7 +17,7 @@
         <ul class="navbar-nav d-flex flex-row gap-4">
         <li class="nav-item"><a class="navlink" href="index.html">home</a></li>
         <li class="nav-item"><a class="navlink" href="products.html">products</a></li>
-        <li class="nav-item"><a class="navlink" href="shopping cart.html">shopping cart</a></li>
+        <li class="nav-item"><a class="navlink" href="shopping-cart.html">shopping cart</a></li>
         <li class="nav-item"><a class="navlink active" href="checkout.html">checkout</a></li>
             </ul>
         </div>
@@ -120,16 +120,20 @@
         </div>
 
         <div class="row text-dark small fw-bold mb-4">
-          <div class="col-4 text-start">20,000tsh</div>
-          <div class="col-4 text-center">3-4-2026</div>
-          <div class="col-4 text-end">Bank</div>
+          <div class="col-4 text-start" id="finalAmount"></div>
+          <div class="col-4 text-center" id="todayDate"></div>
+          <div class="col-4 text-end"><select name="payment method" style="background-color:#e6dfd5 ;">
+            <option>Bank</option>
+            <option>Mpesa</option>
+            <option>Tigo Pesa</option>
+          </select>
+        </div>
         </div>
       </div>
 
-      <!-- Button ya Pay Now (Iko chini kabisa huko) -->
       <div class="pt-4 mb-2">
         <button class="btn text-white w-100 py-2 fw-semibold rounded-pill" 
-        style="background-color: #8E7507;">
+        style="background-color: #8E7507;" id="payNow">
           Pay Now
         </button>
       </div>
@@ -157,9 +161,12 @@
                 <p class="mb-3">info@fashionstore.com</p>
                 <p class="mb-1"><strong>FOLLOW US:</strong></p>
                 <div class="d-flex gap-3 fs-5">
-                    <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                     <a href="https://www.tiktok.com/zara" target="_blank" 
+                    class="social-icon"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://www.instagram.com/zara" target="_blank" 
+                    class="social-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/zara" target="_blank"
+                     class="social-icon"><i class="bi bi-facebook"></i></a>
                 </div>
             </div>
             <div class="col-12 col-md-3">
@@ -202,5 +209,6 @@
         </div>
     </div>
 </footer>
+<script src="checkout.js"></script>
 </body>
 </html>

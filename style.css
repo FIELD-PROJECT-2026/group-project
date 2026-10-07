@@ -14,12 +14,21 @@ nav{
     font-size: 24px;
     margin: 0;
 }
+.nav-link{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
 nav a{
     color: white;
     text-decoration: none;
 }
 .active{
     color: pink;
+}
+.badge-black {
+  color: white;
+  vertical-align: middle;
 }
 .hero-section{
     background-image: url("image/banner.jpg");
@@ -28,7 +37,6 @@ nav a{
     background-position: center;
     color: aliceblue;
     min-height: 60vh;
-    background-color: rgba(0,0,0,0.5);
     backdrop-filter: blur(3px);                             
 }
 .btn-custom-brown {
@@ -36,7 +44,6 @@ nav a{
     color: #ffffff;
     border: none;
 }
-
 .btn-custom-brown:hover {
     background-color: purple;
     color: #ffffff;

@@ -14,12 +14,12 @@
        <div class="container">
       <img src="image/logo.png" class="rounded-circle me-2" alt="logo">
       <h1 class="h4 text-white mb-0 "> ONLINE <br>Shopping </h1>
-    
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav d-flex flex-row gap-4">
         <li class="nav-item"><a class="navlink" href="index.html">home</a></li>
         <li class="nav-item"><a class="navlink active" href="products.html">products</a></li>
-        <li class="nav-item"><a class="navlink" href="shopping cart.html">shopping cart</a></li>
+        <li class="nav-item"><a class="navlink" href="shopping-cart.html">shopping cart</a></li><sup>
+         <span id="cartBadge" class="badge badge-black">0</span></sup>
         <li class="nav-item"><a class="navlink" href="checkout.html">checkout</a></li>
             </ul>
             </div>
@@ -42,7 +42,8 @@
             <h6 class="fw-bold">Jeans Jacket</h6>
             <small class="text-dark d-block">size-55px,61px</small>
             <span class="fw-bold text-dark d-block mb-2">10,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+            <button class="btn btn-sm text-white w-100 mt-auto" 
+            onclick="addToCart('Jeans Jacket',10000,'image/jeans jacket.png','size-55px,61px')">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -53,7 +54,8 @@
             <h6 class="fw-bold">Blue slim jeans</h6>
             <small class="text-dark d-block">size-25px,36px</small>
             <span class="fw-bold text-dark d-block mb-2">25,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+            <button class="btn btn-sm text-white w-100 mt-auto"
+            onclick="addToCart('Blue slim jeans',25000,'image/blue slim jeans.png','size-25px,36px')">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -64,7 +66,8 @@
             <h6 class="fw-bold">White sneaker</h6>
             <small class="text-muted d-block">size-36px,38px</small>
             <span class="fw-bold text-dark d-block mb-2">20,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+            <button class="btn btn-sm text-white w-100 mt-auto"
+            onclick="addToCart('White sneaker',20000,'image/white shoe.png','size-36px,38px')">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -75,7 +78,8 @@
             <h6 class="fw-bold">Shoulder bag</h6>
             <small class="text-muted d-block">size-small</small>
             <span class="fw-bold text-dark d-block mb-2">35,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+            <button class="btn btn-sm text-white w-100 mt-auto"
+            onclick="addToCart('Shoulder bag',35000,'image/shoulder bag.png','size-small')">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -86,7 +90,8 @@
             <h6 class="fw-bold">shirt</h6>
             <small class="text-muted d-block">size-55px,61px</small>
             <span class="fw-bold text-dark d-block mb-2">20,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+            <button class="btn btn-sm text-white w-100 mt-auto" 
+            onclick="addToCart('shirt',20000,'image/shirt1.png','size-55px,61px')">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -99,7 +104,8 @@
             <h6 class="fw-bold">Maroon shirt</h6>
             <small class="text-dark d-block">size-40px,46px</small>
             <span class="fw-bold text-dark d-block mb-2">35,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+            <button btn btn-sm text-white w-100 mt-auto" 
+            onclick="addToCart('Maroon shirt',35000,'image/purple.png','size-40px,46px')">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -110,7 +116,8 @@
             <h6 class="fw-bold">Polo tshirt</h6>
             <small class="text-muted d-block">size-30px,40px</small>
             <span class="fw-bold text-dark d-block mb-2">25,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+            <button class="btn btn-sm text-white w-100 mt-auto"
+            onclick="addToCart('Polo tshirt',25000,'image/polo tshirt.png','size-30px,40px')">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -121,18 +128,21 @@
             <h6 class="fw-bold">Casual Sneaker</h6>
             <small class="text-dark d-block">size-30px,35px,38px,40px</small>
             <span class="fw-bold text-dark d-block mb-2">30,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+            <button class="btn btn-sm text-white w-100 mt-auto"
+            onclick="addToCart('Casual sneaker',30000,'image/casual sneaker.png','size-30px,35px,38px,40px')
+            ">Add to Cart</button>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card product-card h-100 shadow-sm border-0">
-          <img src="image\palazo pant.png" class="card-img-top" alt="shirt">
+          <img src="image\casual sneaker.png" class="card-img-top" alt="shirt">
           <div class="card-body text-center d-flex flex-column">
             <h6 class="fw-bold">Palazo</h6>
             <small class="text-dark d-block">size-20px,26px,28px</small>
             <span class="fw-bold text-dark d-block mb-2">30,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+          <button class="btn btn-sm text-white w-100 mt-auto"
+            onclick="addToCart('Palazo',30000,'image/casual sneaker.png','size-20px,26px,28px')">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -143,7 +153,8 @@
             <h6 class="fw-bold">Slim Jeans</h6>
             <small class="text-muted d-block">size-30px,38px</small>
             <span class="fw-bold text-dark d-block mb-2">28,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+            <button class="btn btn-sm text-white w-100 mt-auto" 
+            onclick="addToCart('Slim jeans',28000,'image/slim jeans.png','size-30px,38px')">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -156,7 +167,9 @@
             <h6 class="fw-bold">White Tshirt</h6>
             <small class="text-muted d-block">size-36px,35px</small>
             <span class="fw-bold text-dark d-block mb-2">15,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+            <button class="btn btn-sm text-white w-100 mt-auto"
+            onclick="addToCart('White Tshirt',15000,'image/white tshirt.png','size-36px,35px')">
+            Add to Cart</button>
           </div>
         </div>
       </div>
@@ -167,7 +180,8 @@
             <h6 class="fw-bold">Red Blazer</h6>
             <small class="text-muted d-block">size-medium ,large</small>
             <span class="fw-bold text-dark d-block mb-2">40,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+            <button class="btn btn-sm text-white w-100 mt-auto"
+            onclick="addToCart('Red Blazer',40000,'image/red blazer.png','size-medium ,large')">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -178,7 +192,8 @@
             <h6 class="fw-bold">Plaid shirt</h6>
             <small class="text-dark d-block">size-medium</small>
             <span class="fw-bold text-dark d-block mb-2">15,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+            <button class="btn btn-sm text-white w-100 mt-auto"
+            onclick="addToCart('Plaid shirt',15000,'image/plaid shirt.png','size-medium')">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -189,7 +204,9 @@
             <h6 class="fw-bold">Floral dress</h6>
             <small class="text-muted d-block">size-small & medium</small>
             <span class="fw-bold text-dark d-block mb-2">50,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+            <button class="btn btn-sm text-white w-100 mt-auto"
+            onclick="addToCart('Floral dress',50000,'image/floral dress.png','size-small & medium')
+            ">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -200,7 +217,8 @@
             <h6 class="fw-bold">tshirt</h6>
             <small class="text-dark d-block">size-25px,38px</small>
             <span class="fw-bold text-dark d-block mb-2">28,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+            <button class="btn btn-sm text-white w-100 mt-auto"
+            onclick="addToCart('Tshirt',28000,'image/tshirt.png','size-25px,38px')">Add to Cart</button>
           </div>
         </div>
       </div> 
@@ -223,9 +241,12 @@
                 <p class="mb-3">info@fashionstore.com</p>
                 <p class="mb-1"><strong>FOLLOW US:</strong></p>
                 <div class="d-flex gap-3 fs-5">
-                    <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                     <a href="https://www.tiktok.com/zara" target="_blank" 
+                    class="social-icon"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://www.instagram.com/zara" target="_blank" 
+                    class="social-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/zara" target="_blank"
+                     class="social-icon"><i class="bi bi-facebook"></i></a>
                 </div>
             </div>
             <div class="col-12 col-md-3">
@@ -268,5 +289,6 @@
         </div>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

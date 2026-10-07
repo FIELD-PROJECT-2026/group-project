@@ -19,7 +19,8 @@
         <ul class="navbar-nav d-flex flex-row gap-4">
         <li class="nav-item"><a class="navlink " href="index.html">home</a></li>
         <li class="nav-item"><a class="navlink" href="products.html">products</a></li>
-        <li class="nav-item"><a class="navlink active" href="shopping cart.html">shopping cart</a></li>
+        <li class="nav-item"><a class="navlink active" href="shopping-cart.html">shopping cart</a></li><sup>
+         <span id="cartBadge" class="badge badge-black">0</span></sup>
         <li class="nav-item"><a class="navlink" href="checkout.html">checkout</a></li>
             </ul>
         </div>
@@ -29,6 +30,7 @@
   <div class="text-center mb-5">
     <h2 class="fw-bold text-uppercase fs-4">YOUR SHOPPING CART</h2>
     <p class="text-dark">Review your selected items</p>
+    <button id="clearCart" class="btn my-btn">CLEAR CART</button>
   </div>
 <div class="row g-4">
     <!--Cart Items Table -->
@@ -44,81 +46,7 @@
               <th scope="col" class="text-end">Total</th>
             </tr>
           </thead>
-          <tbody>
-
-            <!-- Item 1 -->
-            <tr>
-              <td class="py-4">
-                <div class="d-flex align-items-center">
-                  <img src="image/jeans jacket.png" alt="T-Shirt" class="img-fluid rounded 
-                  me-3" style="width: 100px; height: 100px; object-fit: cover;">
-                  <div>
-                    <h6 class="mb-1 fw-semibold">T-shirt</h6>
-                    <small class="text-dark d-block">Size-25px, 38px etc.</small>
-                  </div>
-                </div>
-              </td>
-              <td>Tsh 28,000</td>
-              <td>
-                <div class="input-group input-group-sm justify-content-center mx-auto" 
-                style="width: 100px;">
-                  <button class="btn btn-outline-secondary" type="button">-</button>
-                  <input type="number" class="form-control text-center qty-input" value="1" min="1">
-                  <button class="btn btn-outline-secondary btn-plus" type="button">+</button>
-                </div>
-              </td>
-              <td class="text-end fw-semibold">Tsh 28,000</td>
-            </tr>
-
-            <!-- Item 2 -->
-            <tr>
-              <td class="py-4">
-                <div class="d-flex align-items-center">
-                  <img src="image/red blazer.png" alt="Red Blazer" class="img-fluid rounded me-3"
-                   style="width: 100px; height: 100px; object-fit: cover;">
-                  <div>
-                    <h6 class="mb-1 fw-semibold">Red blazer</h6>
-                    <small class="text-dark d-block">size-medium, large, etc.</small>
-                  </div>
-                </div>
-              </td>
-              <td>Tsh 40,000</td>
-              <td>
-                <div class="input-group input-group-sm justify-content-center mx-auto" 
-                style="width: 100px;">
-                  <button class="btn btn-outline-secondary" type="button">-</button>
-                  <input type="number" class="form-control text-center qty-input" value="1" min="1">
-                  <button class="btn btn-outline-secondary btn-plus" type="button">+</button>
-                </div>
-              </td>
-              <td class="text-end fw-semibold">Tsh 40,000</td>
-            </tr>
-
-            <!-- Item 3 -->
-            <tr>
-              <td class="py-4">
-                <div class="d-flex align-items-center">
-                  <img src="image/blue slim jeans.png" alt="Blue Slim Jeans" 
-                  class="img-fluid rounded me-3" style="width: 100px; height: 100px; 
-                  object-fit: cover;">
-                  <div>
-                    <h6 class="mb-1 fw-semibold">Blue slim jeans</h6>
-                    <small class="text-dark d-block">Size-25px, 38px etc.</small>
-                  </div>
-                </div>
-              </td>
-              <td>Tsh 28,000</td>
-              <td>
-                <div class="input-group input-group-sm justify-content-center mx-auto" 
-                style="width: 100px;">
-                  <button class="btn btn-outline-secondary" type="button">-</button>
-                  <input type="number" class="form-control text-center qty-input" value="1" min="1">
-                  <button class="btn btn-outline-secondary btn-plus" type="button">+</button>
-                </div>
-              </td>
-              <td class="text-end fw-semibold">Tsh 28,000</td>
-            </tr>
-
+          <tbody id="cartItems">
           </tbody>
         </table>
       </div>
@@ -131,24 +59,22 @@
 
         <div class="d-flex justify-content-between mb-2">
           <span class="text-dark">Subtotal</span>
-          <span class="fw-semibold">Tsh 96,000</span>
+          <span id="subtotal"></span>
         </div>
-
-        <div class="d-flex justify-content-between mb-2">
-          <span class="text-dark">Shipping</span>
-          <span class="fw-semibold">8000</span>
-        </div>
-
         <div class="d-flex justify-content-between mb-3">
           <span class="text-dark">Discount</span>
-          <span class="text-success">- Tsh 0.1</span>
+          <span id="discount">0.1</span>
+        </div>
+         <div class="d-flex justify-content-between mb-2">
+          <span class="text-dark">Delivery</span>
+          <span class="fw-semibold" id="shipping">paid by customer</span>
         </div>
 
         <hr>
 
         <div class="d-flex justify-content-between mb-4">
           <span class="fw-bold fs-5">Total</span>
-          <span class="fw-bold fs-5">Tsh 94,000</span>
+          <span class="total" id="grandTotal"></span>
         </div>
 
        <a href="checkout.html" class="btn btn-sm text-white w-100 mt-auto">Proceed Checkout</a><br>
@@ -173,9 +99,12 @@
                 <p class="mb-3">info@fashionstore.com</p>
                 <p class="mb-1"><strong>FOLLOW US:</strong></p>
                 <div class="d-flex gap-3 fs-5">
-                    <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                     <a href="https://www.tiktok.com/zara" target="_blank" 
+                    class="social-icon"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://www.instagram.com/zara" target="_blank" 
+                    class="social-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/zara" target="_blank"
+                     class="social-icon"><i class="bi bi-facebook"></i></a>
                 </div>
             </div>
             <div class="col-12 col-md-3">
@@ -218,5 +147,6 @@
         </div>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
