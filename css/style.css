@@ -14,21 +14,31 @@ nav{
     font-size: 24px;
     margin: 0;
 }
+.nav-link{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
 nav a{
     color: white;
     text-decoration: none;
 }
-.active{
-    color: orange;
+.active {
+color: orangered;
 }
+
+.badge-black {
+color: white;
+vertical-align: middle;
+}
+
 .hero-section{
-    background-image: url("image/banner.jpg");
+    background-image: url("../image/banner.jpg");
     background-size: cover;
     height: 200px;
     background-position: center;
     color: aliceblue;
     min-height: 60vh;
-    background-color: rgba(0,0,0,0.5);
     backdrop-filter: blur(3px);                             
 }
 .btn-custom-brown {
@@ -36,7 +46,6 @@ nav a{
     color: #ffffff;
     border: none;
 }
-
 .btn-custom-brown:hover {
     background-color: purple;
     color: #ffffff;
@@ -64,6 +73,11 @@ nav a{
 /*product page*/
 .btn-sm{
     background-color: #6A5836;
+    transition: all 0.3s ease-in-out !important;
+}
+.btn-sm:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0,0,0.2);
 }
 .card-img-top{
     height: 200px;
