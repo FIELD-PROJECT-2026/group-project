@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -8,9 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <title>SHOPPING Online</title>
     <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg sticky-top">
+ </head>
+ <body>
+     <nav class="navbar navbar-expand-lg sticky-top">
        <div class="container">
       <img src="../image/logo.png" class="rounded-circle me-2" alt="logo">
       <h1 class="h4 text-white mb-0 "> ONLINE <br>Shopping </h1>
@@ -24,9 +24,9 @@
             </ul>
         </div>
         </div>
-    </nav> 
+     </nav> 
  
-    <section class="hero-section text-center text-white d-flex align-items-center justify-content-center position-relative">
+     <section class="hero-section text-center text-white d-flex align-items-center justify-content-center position-relative">
         <div class="overlay">
         <div class="container position-relative z-1 py-5">
             <h1 class="display-3 fw-bold tracking-wide">NEW SEASON NEW LOOK!!!</h1>
@@ -34,10 +34,10 @@
             <a href="products.php" class="btn btn-custom-brown btn-lg text-uppercase fw-bold px-4 py-2">SHOP NEW ARRIVAL</a>
         </div>
         </div>
-    </section>
+     </section>
 
    
-    <section class="py-5 bg-light">
+     <section class="py-5 bg-light">
         <div class="container">
             <div class="row g-4">
                 <div class="col-12 col-sm-6 col-md-3">
@@ -76,20 +76,19 @@
                         </div>
                     </div>
             </div>
-        </div>
-    </div>
-</section>
-<footer class="footer-section py-3">
-    <div class="container">
-        <div class="row g-2 small">
-            <div class="col-12 col-md-3">
-        <div class="d-flex align-items-center">
-        <img src="../image/logo.png" alt="Logo" 
-        class="footer-logo me-2" width="50px" height="50px">
-        <div>
-           <small class="logo-text text-white"> ONLINE<br>Shopping</small>
-        </div>
-        </div>
+        </div>      
+     </section>
+      <footer class="footer-section py-3">
+         <div class="container">
+          <div class="row g-2 small">
+             <div class="col-12 col-md-3">
+               <div class="d-flex align-items-center">
+                 <img src="../image/logo.png" alt="Logo" 
+         class="footer-logo me-2" width="50px" height="50px">
+                 <div>
+                  <small class="logo-text text-white"> ONLINE<br>Shopping</small>
+                 </div>
+                </div>
                 <p class="mb-2">Quality products, fast delivery and secure online shopping experience to your doorstep everyday.</p>
                 <p class="mb-1"><strong>CONTACT</strong><br>+255 780090541</p>
                 <p class="mb-3">info@fashionstore.com</p>
@@ -99,8 +98,8 @@
                     <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
                     <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
                 </div>
-            </div>
-            <div class="col-12 col-md-3">
+             </div>
+              <div class="col-12 col-md-3">
                 <h6 class="text-white fw-bold mb-3">CUSTOMER SUPPORT</h6>
                 <ul class="list-unstyled footer-menu">
                     <li>CUSTOMER HELP</li>
@@ -109,16 +108,16 @@
                     <li>FAQS</li>
                     <li>Contact Us</li>
                 </ul>
-            </div>
-            <div class="col-12 col-md-3">
+             </div>
+              <div class="col-12 col-md-3">
                 <h6 class="text-white fw-bold mb-3">QUICK LINKS</h6>
                 <ul class="list-unstyled footer-menu">
                     <li><a href="products.php" class="text-white text-decoration-none">Shop all products</a></li>
                     <li><a href="shopping-cart.php" class="text-white text-decoration-none">Shopping-cart</a></li>
                     <li><a href="checkout.php" class="text-white text-decoration-none">Checkout</a></li>
                 </ul>
-            </div>
-            <div class="col-12 col-md-3">
+             </div>
+              <div class="col-12 col-md-3">
                 <h6 class="text-white fw-bold mb-3">STAY CONNECTED</h6>
                 <p class="mb-2">Subscribe for exclusive offers and update</p>
                 <div class="input-group mb-3">
@@ -131,14 +130,12 @@
                 </div>
             </div>
 
-        </div>
-
-        <hr class="my-4 border-secondary">
-        
-        <div class="text-center">
-            <p class="mb-0">&copy;2026 Fashion Store. All Rights Reserved.</p>
-        </div>
-    </div>
-</footer>
-</body>
+         </div>
+         <hr class="my-4 border-secondary">
+                <div class="text-center">
+                    <p class="mb-0">&copy;2026 Fashion Store. All Rights Reserved.</p>
+               </div>
+         </div>
+       </footer>
+  </body>
 </html>

@@ -2,23 +2,21 @@
 //session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-// Get customer information from the checkout form
-$first_name = $_POST['first_name'] ?? '';
-$last_name = $_POST['last_name'] ?? '';
-$email = $_POST['email'] ?? '';
-$address_line1 = $_POST['address_line1'] ?? '';
-$address_line2 = $_POST['address_line2'] ?? '';
-$order_notes = $_POST['order_notes'] ?? '';
-$country = $_POST['country'] ?? '';
-$state = $_POST['state'] ?? '';
-$city = $_POST['city'] ?? '';
-$contact_number = $_POST['contact_number'] ?? '';
-$payment_method = $_POST['payment_method'] ?? '';
-$amount = $_POST['amount'] ?? ;
+    // Get customer information from the checkout form
+    $first_name = $_POST['first_name'] ?? '';
+    $last_name = $_POST['last_name'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $address_line1 = $_POST['address_line1'] ?? '';
+    $address_line2 = $_POST['address_line2'] ?? '';
+    $order_notes = $_POST['order_notes'] ?? '';
+    $country = $_POST['country'] ?? '';
+    $state = $_POST['state'] ?? '';
+    $city = $_POST['city'] ?? '';
+    $contact_number = $_POST['contact_number'] ?? '';
+    $payment_method = $_POST['payment_method'] ?? '';
+    $amount = $_POST['amount'] ?? '';
+
 }
-
-
-
 $products = [
     [
         "name" => "Blue slim jeans",
@@ -40,7 +38,7 @@ $products = [
         "quantity" => 1,
         "price" => 35000
     ]
-];
+    ];
 $subtotal = 0;
 foreach ($products as $product) {
     $subtotal += $product['quantity'] * $product['price'];
@@ -49,6 +47,7 @@ $discount = 0;
 $total = $subtotal - $discount;
 $receipt_no = "000125";
 $date = date("d/m/Y");
+
 
 ?>
 
@@ -79,15 +78,12 @@ $date = date("d/m/Y");
             margin: auto;
             background: white;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        /* HEADER */
+        }      
 
         .header {
             background: #3b281b;
             color: white;
             padding: 30px;
-
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -102,16 +98,12 @@ $date = date("d/m/Y");
         .logo-circle {
             width: 70px;
             height: 70px;
-
             border-radius: 50%;
-
             background: white;
             color: #d49b28;
-
             display: flex;
             justify-content: center;
             align-items: center;
-
             font-size: 30px;
         }
 
@@ -129,7 +121,7 @@ $date = date("d/m/Y");
             font-size: 14px;
         }
 
-        /* TITLE */
+       
 
         .receipt-title {
             padding: 30px;
@@ -147,31 +139,25 @@ $date = date("d/m/Y");
             background: #e5ae32;
             padding: 20px;
             border-radius: 15px;
-
             font-weight: bold;
         }
 
-        /* CUSTOMER */
+      
 
         .customer {
             margin: 0 30px 25px;
-
             background: #f5f4f2;
-
             padding: 20px;
-
             border-radius: 12px;
         }
-
         .customer h3 {
             margin-bottom: 15px;
         }
-
         .customer p {
             margin: 8px 0;
         }
 
-        /* PRODUCTS */
+      
 
         .items {
             padding: 0 30px;
@@ -185,25 +171,18 @@ $date = date("d/m/Y");
         th {
             background: #3b281b;
             color: white;
-
             padding: 15px;
-
             text-align: left;
         }
 
         td {
             padding: 15px;
-
             border-bottom: 1px solid #ddd;
-        }
-
-        /* PAYMENT */
+        }     
 
         .bottom-section {
             display: flex;
-
             justify-content: space-between;
-
             padding: 30px;
         }
 
@@ -211,137 +190,90 @@ $date = date("d/m/Y");
             line-height: 2;
         }
 
-        /* TOTAL */
-
         .totals {
             width: 350px;
-
             background: #f5f4f2;
-
             padding: 20px;
-
             border-radius: 12px;
         }
 
         .total-row {
             display: flex;
-
             justify-content: space-between;
-
             padding: 10px 0;
-
             border-bottom: 1px solid #ddd;
         }
 
         .grand-total {
             background: #e5ae32;
-
             padding: 15px;
-
             margin: 10px -20px -20px;
-
             display: flex;
-
             justify-content: space-between;
-
             font-size: 20px;
-
             font-weight: bold;
-
             border-radius: 0 0 12px 12px;
         }
 
-        /* THANK YOU */
-
         .thank-you {
             text-align: center;
-
             padding: 20px;
-
             font-size: 24px;
-
             font-style: italic;
         }
 
-        /* SIGNATURE */
-
         .signatures {
             display: flex;
-
             justify-content: space-between;
-
             padding: 30px;
         }
 
         .signature {
             width: 40%;
-
             text-align: center;
-
             border-top: 1px solid #333;
-
             padding-top: 10px;
-        }
-
-        /* FOOTER */
+        }      
 
         .footer {
             background: #3b281b;
-
             color: white;
-
             text-align: center;
-
             padding: 20px;
-
             line-height: 1.8;
-        }
-
-        /* PRINT BUTTON */
+        }     
 
         .print-button {
             text-align: center;
-
             margin: 25px;
         }
 
         button {
             background: #e5ae32;
-
             border: none;
-
             padding: 13px 35px;
-
             border-radius: 25px;
-
             font-size: 16px;
-
             font-weight: bold;
-
             cursor: pointer;
         }
 
         button:hover {
             background: #c9911d;
-        }
-
-        /* PRINT */
+           }
 
         @media print {
-
-            body {
-                background: white;
-                padding: 0;
-            }
-
-            .receipt {
-                box-shadow: none;
-            }
-
-            .print-button {
-                display: none;
-            }
-        }
+               body {
+                   background: white;
+                   padding: 0;
+                }
+              .receipt {
+                   box-shadow: none;
+                }
+              .print-button {
+                   display: none;
+                }
+              }
     </style>
 </head>
 
