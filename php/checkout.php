@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <title>SHOPPING Online</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<nav class="navbar navbar-expand-lg sticky-top">
+   <div class="container">
+      <img src="../image/logo.png" class="rounded-circle me-2" alt="logo">
+      <h1 class="h4 text-white mb-0 "> ONLINE <br>Shopping </h1>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav d-flex flex-row gap-4">
+        <li class="nav-item"><a class="navlink" href="index.php">Home</a></li>
+        <li class="nav-item"><a class="navlink" href="products.php">Products</a></li>
+        <li class="nav-item"><a class="navlink" href="shopping-cart.php">Shopping-Cart</a></li>
+        <li class="nav-item"><a class="navlink active" href="checkout.php">Checkout</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+<div class="container py-5">
+  <h2 class="fw-bold text-uppercase mb-4">CHECKOUT</h2>
+
+  <div class="row g-4">
+  
+    <div class="col-lg-8">
+      <div class="p-4 p-md-5 text-white" style="background-color: #6d5438; border-radius: 20px;">
+        <form action="process_checkout.php" method="POST">
+        
+          <label class="form-label text-light small fw-semibold">Details</label>
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control rounded-pill border-0 py-2 px-3" placeholder="First name" name="first_name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control rounded-pill border-0 py-2 px-3" placeholder="Last_name" name="last_name" required>
+            </div>
+          </div>
+          <div class="mb-4">
+            <label class="form-label text-light small fw-semibold">Email</label>
+            <input type="email" class="form-control rounded-pill border-0 py-2 px-3" placeholder="example@gmail.com" name="email" required>
+          </div>
+
+
+    
+          <div class="mb-3">
+            <input type="text" class="form-control rounded-pill border-0 py-2 px-3 mb-3" placeholder="Address line 1" name="address_line_1" required>
+            <input type="text" class="form-control rounded-pill border-0 py-2 px-3" placeholder="Address line 2 (optional)" name="address_line_2">
+             <label class="form-label text-light small fw-semibold">order notes (optional)</label>
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" class="form-control rounded-pill border-0 py-2 px-3" placeholder="share your notes" name="order_notes">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row g-3 mb-3">
+            <div class="col-md-4">
+              <input type="text" class="form-control rounded-pill border-0 py-2 px-3" placeholder="country" name="country" required>
+            </div>
+            <div class="col-md-4">
+              <input type="text" class="form-control rounded-pill border-0 py-2 px-3" placeholder="state" name="state" required>
+            </div>
+            <div class="col-md-4">
+              <input type="text" class="form-control rounded-pill border-0 py-2 px-3" placeholder="city" name="city" required>
+            </div>
+          </div>
+
+
+          <div class="mb-4">
+            <input type="tel" class="form-control rounded-pill border-0 py-2 px-3" placeholder="contact_number" name="contact_number" required>
+          </div>
+          <select name="payment_method" style="border-radius: 10px;">
+            <option value="Cash">Cash</option>
+            <option value="Bank">Bank</option>
+            <option value="Mobile Money">Mobile Money</option>
+          </select>
+          
+          <div>
+            <div class="pt-4 mb-2">
+        <button class="btn text-white w-100 py-2 fw-semibold rounded-pill" 
+        style="background-color: #e8bf07;"type="submit">
+          Submit order
+        </button>
+      </div>
+
+           
+          </div>
+        </form>
+      </div>
+    </div>
+  
+<div class="col-lg-4 d-flex justify-content-center">
+  
+  <div class="position-relative w-100 d-flex flex-column align-items-center" style="margin-top: 20px;">
+    
+
+    <div class="position-absolute rounded-pill translate-middle-x d-flex align-items-center 
+    justify-content-center shadow-sm" style="top: -35px; left: 50%; width: 95%; height: 160px;
+     background-color: #8E7507; z-index: 2;">
+      
+      <img src="../image/Star_1.png" alt="Star Burst" style="max-width: 85%; 
+      max-height: 50px; object-fit: contain;">
+      
+    </div>
+
+  
+    <div class="p-4 text-center d-flex flex-column justify-content-between" 
+         style="width: 78%; min-height: 520px; background-color: #e6dfd5; 
+         border: 1px solid #8E7507; border-top: none; border-radius: 0 0 20px 20px; 
+         padding-top: 130px !important; z-index: 1;">
+      
+      <div>
+        <h3 class="fw-bold mb-1 text-dark">Order<br> Summary</h3>
+        <h5 class="fw-semibold text-dark mb-4">FashionStore</h5>
+
+        <p class="text-secondary small mb-5">Receipt #015</p>
+
+        <div class="row text-secondary small mb-2 fw-semibold">
+          <div class="col-4 text-start">Amount</div>
+          <div class="col-4 text-center">Date</div>
+          <div class="col-4 text-end">payment method</div>
+        </div>
+
+        <div class="row text-dark small fw-bold mb-4">
+          <div class="col-4 text-start">20,000tsh</div>
+          <div class="col-4 text-center">3-4-2026</div>
+          <div class="col-4 text-end">Bank</div>
+        </div>
+        </div>
+        <form action="receipt.php" method="POST">     
+         <div class="pt-4 mb-2">
+           <button class="btn text-white w-100 py-2 fw-semibold rounded-pill"
+              style="background-color: #8E7507;"type="submit">
+               Pay Now
+            </button>
+          </div>
+        </form>            
+      
+    </div>
+
+  </div>
+
+</div>
+  </div>
+</div>
+<footer class="footer-section py-3">
+    <div class="container">
+        <div class="row g-2 small">
+            <div class="col-12 col-md-3">
+        <div class="d-flex align-items-center">
+        <img src="../image/logo.png" alt="Logo" 
+        class="footer-logo me-2" width="50px" height="50px">
+        <div>
+           <small class="logo-text text-white"> ONLINE<br>Shopping</small>
+        </div>
+        </div>
+                <p class="mb-2">Quality products, fast delivery and secure online shopping experience to your doorstep everyday.</p>
+                <p class="mb-1"><strong>CONTACT</strong><br>+255 780090541</p>
+                <p class="mb-3">info@fashionstore.com</p>
+                <p class="mb-1"><strong>FOLLOW US:</strong></p>
+                <div class="d-flex gap-3 fs-5">
+                    <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <h6 class="text-white fw-bold mb-3">CUSTOMER SUPPORT</h6>
+                <ul class="list-unstyled footer-menu">
+                    <li>CUSTOMER HELP</li>
+                    <li>Shipping Policy</li>
+                    <li>Returns & Refunds</li>
+                    <li>FAQS</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <h6 class="text-white fw-bold mb-3">QUICK LINKS</h6>
+                <ul class="list-unstyled footer-menu">
+                   <li><a href="products.html" class="text-white text-decoration-none">Shop all products</a></li>
+                    <li><a href="shopping cart.html" class="text-white text-decoration-none">Shopping cart</a></li>
+                    <li><a href="checkout.html" class="text-white text-decoration-none">Checkout</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <h6 class="text-white fw-bold mb-3">STAY CONNECTED</h6>
+                <p class="mb-2">Subscribe for exclusive offers and update</p>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control form-control-sm rounded-0" placeholder="Enter your email">
+                    <button class="btn btn-warning btn-sm rounded-0 fw-bold" type="button">SUBSCRIBE</button>
+                </div>
+                <h6 class="text-white fw-bold mb-2">PAYMENT METHODS</h6>
+                <div>
+                    <span class="badge bg-secondary">TigoPesa</span>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="my-4 border-secondary">
+        
+        <div class="text-center">
+            <p class="mb-0">&copy;2026 Fashion Store. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -7,31 +7,32 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <title>SHOPPING Online</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg sticky-top">
        <div class="container">
-      <img src="image/logo.png" class="rounded-circle me-2" alt="logo">
+      <img src="../image/logo.png" class="rounded-circle me-2" alt="logo">
       <h1 class="h4 text-white mb-0 "> ONLINE <br>Shopping </h1>
     
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav d-flex flex-row gap-4">
-        <li class="nav-item"><a class="navlink active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="navlink" href="products.html">Products</a></li>
-        <li class="nav-item"><a class="navlink" href="shopping cart.html">Shopping Cart</a></li>
-        <li class="nav-item"><a class="navlink" href="checkout.html">Checkout</a></li>
+        <li class="nav-item"><a class="navlink active" href="index.php">Home</a></li>
+        <li class="nav-item"><a class="navlink" href="products.php">Products</a></li>
+        <li class="nav-item"><a class="navlink" href="shopping-cart.php">Shopping-Cart</a></li>
+        <li class="nav-item"><a class="navlink" href="checkout.php">Checkout</a></li>
             </ul>
         </div>
         </div>
     </nav> 
  
     <section class="hero-section text-center text-white d-flex align-items-center justify-content-center position-relative">
-        <div class="overlay"></div>
+        <div class="overlay">
         <div class="container position-relative z-1 py-5">
             <h1 class="display-3 fw-bold tracking-wide">NEW SEASON NEW LOOK!!!</h1>
             <p class="fs-5 mb-4">Simple, modern & affordable fashion for men and women.<br>shop before it gone!!!!!!!!!!!!</p>
-            <a href="products.html" class="btn btn-custom-brown btn-lg text-uppercase fw-bold px-4 py-2">SHOP NEW ARRIVAL</a>
+            <a href="products.php" class="btn btn-custom-brown btn-lg text-uppercase fw-bold px-4 py-2">SHOP NEW ARRIVAL</a>
+        </div>
         </div>
     </section>
 
@@ -41,7 +42,7 @@
             <div class="row g-4">
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="card product-card h-100">
-                        <img src="image\shirts.png" alt="sample shirts">
+                        <img src="../image/shirts.png" alt="sample shirts">
                         <div class="card-body px-2 py3">
                             <small class="text-muted d-block">size-50px</small>
                             <span class="fw-bold text-dark">10,000Tshs</span>
@@ -50,7 +51,7 @@
                 </div>
             <div class="col-12 col-sm-6 col-md-3">
                     <div class="card product-card h-100">
-                        <img src="image\dress1.png" alt="dress">
+                        <img src="../image/dress1.png" alt="dress">
                         <div class="card-body px-2 py3">
                             <small class="text-muted d-block">size-44px</small>
                             <span class="fw-bold text-dark">50,000Tshs</span>
@@ -59,7 +60,7 @@
             </div>
             <div class="col-12 col-sm-6 col-md-3">
                     <div class="card product-card h-100">
-                        <img src="image\sample shirts.png" alt="shirts">
+                        <img src="../image/sample_shirts.png" alt="shirts">
                         <div class="card-body px-2 py3">
                             <small class="text-muted d-block">size-30px,40px,48px</small>
                             <span class="fw-bold text-dark">20,000Tshs</span>
@@ -68,7 +69,7 @@
             </div>
             <div class="col-12 col-sm-6 col-md-3">
                     <div class="card product-card h-100">
-                        <img src="image\green coat.png" alt="green coat">
+                        <img src="../image/green_coat.png" alt="green coat">
                         <div class="card-body px-2 py3">
                             <small class="text-muted d-block">size-40px,50px,60px</small>
                             <span class="fw-bold text-dark">25,000Tshs</span>
@@ -83,7 +84,7 @@
         <div class="row g-2 small">
             <div class="col-12 col-md-3">
         <div class="d-flex align-items-center">
-        <img src="image\logo.png" alt="Logo" 
+        <img src="../image/logo.png" alt="Logo" 
         class="footer-logo me-2" width="50px" height="50px">
         <div>
            <small class="logo-text text-white"> ONLINE<br>Shopping</small>
@@ -112,9 +113,9 @@
             <div class="col-12 col-md-3">
                 <h6 class="text-white fw-bold mb-3">QUICK LINKS</h6>
                 <ul class="list-unstyled footer-menu">
-                    <li><a href="products.html" class="text-white text-decoration-none">Shop all products</a></li>
-                    <li><a href="shopping cart.html" class="text-white text-decoration-none">Shopping cart</a></li>
-                    <li><a href="checkout.html" class="text-white text-decoration-none">Checkout</a></li>
+                    <li><a href="products.php" class="text-white text-decoration-none">Shop all products</a></li>
+                    <li><a href="shopping-cart.php" class="text-white text-decoration-none">Shopping-cart</a></li>
+                    <li><a href="checkout.php" class="text-white text-decoration-none">Checkout</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-3">

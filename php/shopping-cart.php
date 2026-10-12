@@ -7,20 +7,20 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <title>SHOPPING Online</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
    <nav class="navbar navbar-expand-lg sticky-top">
        <div class="container">
-      <img src="image/logo.png" class="rounded-circle me-2" alt="logo">
+      <img src="../image/logo.png" class="rounded-circle me-2" alt="logo">
       <h1 class="h4 text-white mb-0 "> ONLINE <br>Shopping </h1>
     
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav d-flex flex-row gap-4">
-        <li class="nav-item"><a class="navlink" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="navlink" href="products.html">Products</a></li>
-        <li class="nav-item"><a class="navlink active" href="shopping cart.html">Shopping Cart</a></li>
-        <li class="nav-item"><a class="navlink" href="checkout.html">Checkout</a></li>
+        <li class="nav-item"><a class="navlink" href="index.php">Home</a></li>
+        <li class="nav-item"><a class="navlink" href="products.php">Products</a></li>
+        <li class="nav-item"><a class="navlink active" href="shopping-cart.php">Shopping-Cart</a></li>
+        <li class="nav-item"><a class="navlink" href="checkout.php">Checkout</a></li>
             </ul>
             </div>
         </div>
@@ -47,9 +47,10 @@
           <tbody>
 
             <tr>
-              <td class="py-4">
+
+              <td class="py-4">                
                 <div class="d-flex align-items-center">
-                  <img src="image/jeans jacket.png" alt="T-Shirt" class="img-fluid rounded 
+                  <img src="../image/jeans_jacket.png" alt="T-Shirt" class="img-fluid rounded 
                   me-3" style="width: 100px; height: 100px; object-fit: cover;">
                   <div>
                     <h6 class="mb-1 fw-semibold">T-shirt</h6>
@@ -58,7 +59,7 @@
                 </div>
               </td>
               <td>Tsh 28,000</td>
-              <td>
+              <td>                
                 <div class="input-group input-group-sm justify-content-center mx-auto" 
                 style="width: 100px;">
                   <button class="btn btn-outline-secondary" type="button">-</button>
@@ -71,9 +72,9 @@
 
         
             <tr>
-              <td class="py-4">
+              <td class="py-4">                
                 <div class="d-flex align-items-center">
-                  <img src="image/red blazer.png" alt="Red Blazer" class="img-fluid rounded me-3"
+                  <img src="../image/red_blazer.png" alt="Red Blazer" class="img-fluid rounded me-3"
                    style="width: 100px; height: 100px; object-fit: cover;">
                   <div>
                     <h6 class="mb-1 fw-semibold">Red blazer</h6>
@@ -81,7 +82,7 @@
                   </div>
                 </div>
               </td>
-              <td>Tsh 40,000</td>
+              <td>Tsh 40,000</td>             
               <td>
                 <div class="input-group input-group-sm justify-content-center mx-auto" 
                 style="width: 100px;">
@@ -95,9 +96,9 @@
 
       
             <tr>
-              <td class="py-4">
+              <td class="py-4">               
                 <div class="d-flex align-items-center">
-                  <img src="image/blue slim jeans.png" alt="Blue Slim Jeans" 
+                  <img src="../image/blue_slim_jeans.png" alt="Blue Slim Jeans" 
                   class="img-fluid rounded me-3" style="width: 100px; height: 100px; 
                   object-fit: cover;">
                   <div>
@@ -106,7 +107,7 @@
                   </div>
                 </div>
               </td>
-              <td>Tsh 28,000</td>
+              <td>Tsh 28,000</td>              
               <td>
                 <div class="input-group input-group-sm justify-content-center mx-auto" 
                 style="width: 100px;">
@@ -161,7 +162,7 @@
         <div class="row g-2 small">
             <div class="col-12 col-md-3">
         <div class="d-flex align-items-center">
-        <img src="image\logo.png" alt="Logo" 
+        <img src="../image/logo.png" alt="Logo" 
         class="footer-logo me-2" width="50px" height="50px">
         <div>
            <small class="logo-text text-white"> ONLINE<br>Shopping</small>

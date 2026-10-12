@@ -6,21 +6,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-    <title>ONLINE Shopping</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SHOPPING Online</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
      <nav class="navbar navbar-expand-lg sticky-top">
        <div class="container">
-      <img src="image/logo.png" class="rounded-circle me-2" alt="logo">
+      <img src="../image/logo.png" class="rounded-circle me-2" alt="logo">
       <h1 class="h4 text-white mb-0 "> ONLINE <br>Shopping </h1>
     
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav d-flex flex-row gap-4">
-        <li class="nav-item"><a class="navlink" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="navlink active" href="products.html">Products</a></li>
-        <li class="nav-item"><a class="navlink" href="shopping cart.html">Shopping Cart</a></li>
-        <li class="nav-item"><a class="navlink" href="checkout.html">Checkout</a></li>
+        <li class="nav-item"><a class="navlink" href="index.php">Home</a></li>
+        <li class="nav-item"><a class="navlink active" href="products.php">Products</a></li>
+        <li class="nav-item"><a class="navlink" href="shopping-cart.php">Shopping-Cart</a></li>
+        <li class="nav-item"><a class="navlink" href="checkout.php">Checkout</a></li>
             </ul>
             </div>
         </div>
@@ -37,7 +37,7 @@
     <div class="row row-cols-2 row-cols-md-5 g-4">
       <div class="col">
         <div class="card product-card h-100 shadow-sm border-0">
-          <img src="image\jeans jacket.png" class="card-img-top" alt="Jeans Jacket">
+          <img src="../image/jeans_jacket.png" class="card-img-top" alt="Jeans Jacket">
           <div class="card-body text-center d-flex flex-column">
             <h6 class="fw-bold">Jeans Jacket</h6>
             <small class="text-dark d-block">size-55px,61px</small>
@@ -48,7 +48,7 @@
       </div>
       <div class="col">
         <div class="card product-card h-100 shadow-sm border-0">
-          <img src="image\blue slim jeans.png" class="card-img-top" alt="blue Slim Jeans">
+          <img src="../image/blue_slim_jeans.png" class="card-img-top" alt="blue Slim Jeans">
           <div class="card-body text-center d-flex flex-column">
             <h6 class="fw-bold">Blue slim jeans</h6>
             <small class="text-dark d-block">size-25px,36px</small>
@@ -59,7 +59,7 @@
       </div>
       <div class="col">
         <div class="card product-card h-100 shadow-sm border-0">
-          <img src="image\white shoe.png" class="card-img-top" alt="white sneaker">
+          <img src="../image/white_sneaker.png" class="card-img-top" alt="white sneaker">
           <div class="card-body text-center d-flex flex-column">
             <h6 class="fw-bold">White sneaker</h6>
             <small class="text-muted d-block">size-36px,38px</small>
@@ -70,7 +70,7 @@
       </div>
       <div class="col">
         <div class="card product-card h-100 shadow-sm border-0">
-          <img src="image\shoulder bag.png" class="card-img-top" alt="shoulder bag">
+          <img src="../image/shoulder_bag.png" class="card-img-top" alt="shoulder bag">
           <div class="card-body text-center d-flex flex-column">
             <h6 class="fw-bold">Shoulder bag</h6>
             <small class="text-muted d-block">size-small</small>
@@ -81,12 +81,12 @@
       </div>
       <div class="col">
         <div class="card product-card h-100 shadow-sm border-0">
-          <img src="image\shirt1.png" class="card-img-top" alt="shirt">
+          <img src="../image/shirt1.png" class="card-img-top" alt="shirt">
           <div class="card-body text-center d-flex flex-column">
             <h6 class="fw-bold">shirt</h6>
             <small class="text-muted d-block">size-55px,61px</small>
             <span class="fw-bold text-dark d-block mb-2">20,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+             <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
           </div>
         </div>
       </div>
@@ -94,18 +94,18 @@
 <div class="row row-cols-2 row-cols-md-5 g-4 mt-3">
         <div class="col">
         <div class="card product-card h-100 shadow-sm border-0">
-          <img src="image\purple.png" class="card-img-top" alt="maroon shirt">
+          <img src="../image/purple.png" class="card-img-top" alt="maroon shirt">
           <div class="card-body text-center d-flex flex-column">
             <h6 class="fw-bold">Maroon shirt</h6>
             <small class="text-dark d-block">size-40px,46px</small>
             <span class="fw-bold text-dark d-block mb-2">35,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+             <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card product-card h-100 shadow-sm border-0">
-          <img src="image\polo tshirt.png" class="card-img-top" alt="polo shirts">
+          <img src="../image/polo_tshirt.png" class="card-img-top" alt="polo shirts">
           <div class="card-body text-center d-flex flex-column">
             <h6 class="fw-bold">Polo tshirt</h6>
             <small class="text-muted d-block">size-30px,40px</small>
@@ -116,7 +116,7 @@
       </div>
       <div class="col">
         <div class="card product-card h-100 shadow-sm border-0">
-          <img src="image\casual sneaker.png" class="card-img-top" alt="casual sneaker">
+          <img src="../image/casual_sneaker.png" class="card-img-top" alt="casual sneaker">
           <div class="card-body text-center d-flex flex-column">
             <h6 class="fw-bold">Casual Sneaker</h6>
             <small class="text-dark d-block">size-30px,35px,38px,40px</small>
@@ -127,7 +127,7 @@
       </div>
       <div class="col">
         <div class="card product-card h-100 shadow-sm border-0">
-          <img src="image\palazo pant.png" class="card-img-top" alt="shirt">
+          <img src="../image/palazo_pant.png" class="card-img-top" alt="palazo pant">
           <div class="card-body text-center d-flex flex-column">
             <h6 class="fw-bold">Palazo</h6>
             <small class="text-dark d-block">size-20px,26px,28px</small>
@@ -138,7 +138,7 @@
       </div>
       <div class="col">
         <div class="card product-card h-100 shadow-sm border-0">
-          <img src="image\slim jeans.png" class="card-img-top" alt="slim jeans">
+          <img src="../image/slim_jeans.png" class="card-img-top" alt="slim jeans">
           <div class="card-body text-center d-flex flex-column">
             <h6 class="fw-bold">Slim Jeans</h6>
             <small class="text-muted d-block">size-30px,38px</small>
@@ -151,7 +151,7 @@
     <div class="row row-cols-2 row-cols-md-5 g-4 mt-3">
        <div class="col">
         <div class="card product-card h-100 shadow-sm border-0">
-          <img src="image\white tshirt.png" class="card-img-top" alt="white tshirts">
+          <img src="../image/white_tshirt.png" class="card-img-top" alt="white tshirts">
           <div class="card-body text-center d-flex flex-column">
             <h6 class="fw-bold">White Tshirt</h6>
             <small class="text-muted d-block">size-36px,35px</small>
@@ -162,7 +162,7 @@
       </div>
       <div class="col">
         <div class="card product-card h-100 shadow-sm border-0">
-          <img src="image\red blazer.png" class="card-img-top" alt="red blazer">
+          <img src="../image/red_blazer.png" class="card-img-top" alt="red blazer">
           <div class="card-body text-center d-flex flex-column">
             <h6 class="fw-bold">Red Blazer</h6>
             <small class="text-muted d-block">size-medium ,large</small>
@@ -173,7 +173,7 @@
       </div>
       <div class="col">
         <div class="card product-card h-100 shadow-sm border-0">
-          <img src="image\plaid shirt.png" class="card-img-top" alt="plaid shirt">
+          <img src="../image/plaid_shirt.png" class="card-img-top" alt="plaid shirt">
           <div class="card-body text-center d-flex flex-column">
             <h6 class="fw-bold">Plaid shirt</h6>
             <small class="text-dark d-block">size-medium</small>
@@ -184,35 +184,36 @@
       </div>
       <div class="col">
         <div class="card product-card h-100 shadow-sm border-0">
-          <img src="image\floral dress.png" class="card-img-top" alt="floral dress">
+          <img src="../image/floral_dress.png" class="card-img-top" alt="floral dress">
           <div class="card-body text-center d-flex flex-column">
             <h6 class="fw-bold">Floral dress</h6>
             <small class="text-muted d-block">size-small & medium</small>
             <span class="fw-bold text-dark d-block mb-2">50,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+             <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card product-card h-100 shadow-sm border-0">
-          <img src="image\tshirt.png" class="card-img-top" alt="tshirt">
+          <img src="../image/tshirt.png" class="card-img-top" alt="tshirt">
           <div class="card-body text-center d-flex flex-column">
             <h6 class="fw-bold">tshirt</h6>
             <small class="text-dark d-block">size-25px,38px</small>
             <span class="fw-bold text-dark d-block mb-2">28,000 Tshs</span>
-            <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
+           <a href="shopping cart.html" class="btn btn-sm text-white w-100 mt-auto">Add to Cart</a>
           </div>
         </div>
       </div> 
     </div>
 </div>
+
 </section>
 <footer class="footer-section py-3">
     <div class="container">
         <div class="row g-2 small">
             <div class="col-12 col-md-3">
         <div class="d-flex align-items-center">
-        <img src="image\logo.png" alt="Logo" 
+        <img src="../image/logo.png" alt="Logo" 
         class="footer-logo me-2" width="50px" height="50px">
         <div>
            <small class="logo-text text-white"> ONLINE<br>Shopping</small>
