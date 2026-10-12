@@ -32,6 +32,7 @@ foreach ($requiredFields as $field) {
     }
 
 
+}
 $amount = 20000;
 $receiptNo = rand(100, 999);
 $date = date('d-m-Y');
@@ -105,7 +106,4 @@ echo "<p>Your Order ID is: <strong>#" . $newOrderID . "</strong></p>";
 echo "<a href='index.html'>Return to Shop</a>";
 echo "</div>";
 
-    }
-
-
-?>
+    ?>
