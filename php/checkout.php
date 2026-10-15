@@ -211,5 +211,6 @@
         </div>
     </div>
 </footer>
+<script src="../js/checkout.js"></script>
 </body>
 </html>

@@ -1,9 +1,9 @@
 <?php
 
-$host = "192.168.100.79";
-$username = "ecommerce_user";
-$password = "Charity@2026";
-$database = "ecommerce_db";
+$host = "192.168.1.30";
+$username = "root";
+$password = "Vampire@45";
+$database = "fashionstoredb";
 $port = 3306;
 
 $conn = mysqli_connect(
