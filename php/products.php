@@ -269,6 +269,6 @@
         </div>
     </div>
 </footer>
-<script src="../js/checkout.js"></script>
+<script src="../js/product.js"></script>
 </body>
 </html>

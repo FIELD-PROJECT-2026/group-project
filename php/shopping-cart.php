@@ -218,6 +218,6 @@
         </div>
     </div>
 </footer>
-<script src="../js/checkout.js"></script>
+<script src="../js/shopping-cart.js"></script>
 </body>
 </html>
